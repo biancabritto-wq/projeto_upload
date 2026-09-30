@@ -16,7 +16,7 @@
         if(is_dir($pasta)) {
             $arquivos = scandir($pasta);
             foreach ($arquivos as $arquivo){
-                  if($arquivo |= "." && $arquivo |="..") {
+                  if($arquivo != "." && $arquivo !="..") {
                     echo "<div>;
                     <img src='$pasta$arquivo' widht ='150' style='border:1px solid #ccc;'>
                 </div>";
